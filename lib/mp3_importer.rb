@@ -12,6 +12,7 @@ class MP3Importer
   end
 
   def import
+    puts 'Inside method'
     @files.each do |file|
       puts 'Nothing happens'
       puts file
