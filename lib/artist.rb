@@ -32,7 +32,6 @@ class Artist
       end
     end
     @@all << artist
-    puts @all
     artist
   end
 
