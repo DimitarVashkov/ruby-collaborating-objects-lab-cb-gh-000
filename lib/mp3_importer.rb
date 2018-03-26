@@ -15,7 +15,6 @@ class MP3Importer
     puts 'Inside method'
     @files = files
     @files.each do |file|
-      puts 'Nothing happens'
       puts file
       Song.new_by_filename(file)
     end
