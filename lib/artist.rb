@@ -32,7 +32,7 @@ class Artist
       end
     end
     @all << artist
-
+    artist
   end
 
   def print_songs
