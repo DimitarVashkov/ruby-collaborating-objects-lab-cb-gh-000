@@ -7,7 +7,8 @@ class MP3Importer
 
   def files
     @files = Dir["./db/mp3s/*.mp3"]
-    puts Dir["./*"]
+    puts Dir["./db/mp3s/*.mp3"]
+    puts '-------------------'
     puts @files
   end
 
