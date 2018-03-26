@@ -1,5 +1,5 @@
 class Artist
-  attr_accessor :name
+  attr_accessor :name, :songs
 
   @@all = []
   def initialize(name)
@@ -33,6 +33,15 @@ class Artist
     end
     @@all << artist
     artist
+  end
+
+  def self.find(name)
+    self.all.find {|artist| artist.name == name }
+  end
+
+
+  def self.create(name)
+    self.new(name).tap {|artist| artist.save}
   end
 
   def print_songs
