@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir["../db/mp3s/.mp3"]
+    @files = Dir["../../**/db/mp3s/.mp3"]
     puts @files
   end
 
