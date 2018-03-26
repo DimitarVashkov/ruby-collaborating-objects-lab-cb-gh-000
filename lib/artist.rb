@@ -31,7 +31,7 @@ class Artist
         artist = x
       end
     end
-    @all << artist
+    @@all << artist
     artist
   end
 
