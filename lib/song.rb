@@ -17,6 +17,7 @@ class Song
     song = Song.new(input[1])
     artist = Artist.find_or_create_by_name(input[0])
     song.artist = artist
+    song
   end
 
 end
